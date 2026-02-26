@@ -1,4 +1,15 @@
-# PocketLedger
+<p align="center">
+  <a href="README.ja.md">日本語</a> | <a href="README.zh.md">中文</a> | <a href="README.es.md">Español</a> | <a href="README.fr.md">Français</a> | <a href="README.hi.md">हिन्दी</a> | <a href="README.it.md">Italiano</a> | <a href="README.pt-BR.md">Português (BR)</a>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mcp-tool-shop-org/brand/main/logos/pocket-ledger/readme.png" width="400" alt="Pocket Ledger">
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+  <a href="https://mcp-tool-shop-org.github.io/pocket-ledger/"><img src="https://img.shields.io/badge/Landing_Page-live-blue" alt="Landing Page"></a>
+</p>
 
 A local-first personal finance and budget tracking app for Windows. Clean, simple, and privacy-focused.
 
@@ -72,4 +83,4 @@ Contributions welcome! Please read our contributing guidelines before submitting
 
 ---
 
-Built with care by [mcp-tool-shop](https://github.com/mcp-tool-shop-org)
+Built by <a href="https://mcp-tool-shop.github.io/">MCP Tool Shop</a>

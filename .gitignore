@@ -76,3 +76,7 @@ $RECYCLE.BIN/
 
 # JetBrains Rider
 *.sln.iml
+site/.astro/
+site/dist/
+site/node_modules/
+.polyglot-cache.json
