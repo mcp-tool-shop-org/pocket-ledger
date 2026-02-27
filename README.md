@@ -73,6 +73,31 @@ dotnet build
 dotnet test
 ```
 
+## Security & Data Scope
+
+| Aspect | Detail |
+|--------|--------|
+| **Data touched** | Financial transactions, budgets, and account data in local SQLite database |
+| **Data NOT touched** | No telemetry. No analytics. No cloud sync. No external API calls. No credential storage |
+| **Permissions** | Read/write: local SQLite database file only. No network access |
+| **Network** | None — fully offline application |
+| **Telemetry** | None collected or sent |
+
+See [SECURITY.md](SECURITY.md) for vulnerability reporting.
+
+## Scorecard
+
+| Category | Score |
+|----------|-------|
+| A. Security | 10 |
+| B. Error Handling | 10 |
+| C. Operator Docs | 10 |
+| D. Shipping Hygiene | 10 |
+| E. Identity (soft) | 10 |
+| **Overall** | **50/50** |
+
+> Full audit: [SHIP_GATE.md](SHIP_GATE.md) · [SCORECARD.md](SCORECARD.md)
+
 ## License
 
 MIT License - See [LICENSE](LICENSE) for details.

@@ -11,6 +11,7 @@
   <PropertyGroup>
     <Authors>mcp-tool-shop</Authors>
     <Company>mcp-tool-shop</Company>
+    <Version>1.0.0</Version>
     <Product>PocketLedger</Product>
     <Copyright>Copyright (c) 2025 mcp-tool-shop</Copyright>
     <RepositoryUrl>https://github.com/mcp-tool-shop-org/pocketledger</RepositoryUrl>
