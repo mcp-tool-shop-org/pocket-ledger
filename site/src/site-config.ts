@@ -14,7 +14,7 @@ export const config: SiteConfig = {
     headlineAccent: '— your money, your device.',
     description: 'A personal finance app that keeps your financial data on your machine. No cloud sync, no telemetry, no external connections. Envelope budgeting that assigns every dollar a job.',
     primaryCta: { href: '#philosophy', label: 'Philosophy' },
-    secondaryCta: { href: 'https://github.com/mcp-tool-shop-org/pocket-ledger', label: 'GitHub' },
+    secondaryCta: { href: 'handbook/', label: 'Read the Handbook' },
     previews: [
       { label: 'Privacy', code: 'Zero telemetry · Zero cloud · Your data stays local' },
       { label: 'Stack', code: '.NET 8 · WinUI 3 · SQLite · Clean Architecture' },
