@@ -1,36 +1,52 @@
 ---
 title: Planned Features
-description: What's coming to Pocket Ledger — transaction tracking, goals, insights, and more.
+description: What Pocket Ledger supports today and what is coming next.
 sidebar:
   order: 2
 ---
 
-Pocket Ledger is in active development. Here is what is planned.
+Pocket Ledger's domain, application, and infrastructure layers are implemented. The desktop UI is the next milestone.
 
-## Transaction tracking
+## Implemented (backend)
 
-Categorized transactions with support for recurring entries. Multi-account support covers checking, savings, and credit accounts. Each transaction is assigned to an envelope.
+### Transaction tracking
 
-## Envelope budgeting system
+Categorized transactions with support for income, expenses, and account-to-account transfers. Each transaction carries a date, amount (as a currency-aware Money value), description, optional notes, and optional category. Transactions can be marked cleared or uncleared, and linked to a recurring transaction template.
 
-Full envelope lifecycle — create envelopes, allocate income, spend from envelopes, and carry forward or reset at month boundaries. Transfer between envelopes when priorities shift.
+### Multi-account support
 
-## Savings goals
+Six account types: checking, savings, credit card, cash, investment, and other. Each account tracks its own currency and balance. Accounts can be activated, deactivated, and reordered.
 
-Visual progress toward what you are saving for. Set a target amount and deadline, and Pocket Ledger tracks how close you are. Goal-oriented budgeting keeps motivation high.
+### Envelope budgeting system
 
-## Recurring transactions
+Full envelope lifecycle — create envelopes tied to a category and month, allocate income, track spending against allocation, and check over-budget status. Envelopes compute remaining balance and percent used. The budget service supports copying envelopes to the next month and generating a period summary.
 
-Define recurring income and expenses — rent, subscriptions, paychecks. Pocket Ledger auto-suggests entries on their due dates so nothing is missed.
+### Savings goals
 
-## Insights and reports
+Set a target amount and optional deadline. Pocket Ledger tracks current progress, percent complete, days remaining, and the required monthly contribution to reach the goal on time. Goals can be archived after completion.
 
-Visual spending breakdowns by category and time period. See where your money goes and how your spending patterns change month over month.
+### Recurring transactions
 
-## Import and export
+Define repeating income and expenses with six recurrence patterns: daily, weekly, bi-weekly, monthly, quarterly, and yearly. Each template specifies a day-of-month or day-of-week, a start date, and an optional end date. The system tracks the next due date and auto-deactivates past the end date.
 
-CSV import from bank exports and CSV export for portability. Bring your transaction history in from your bank, or take it with you if you switch tools.
+### Category system
 
-## Theme support
+Hierarchical categories with parent/child support. Each category has a transaction type (income or expense), an optional icon and color, and a display order. System categories are protected from renaming or deactivation.
 
-Dark and light theme support following your Windows system preference.
+## Planned (not yet built)
+
+### Desktop UI
+
+WinUI 3 presentation layer with MVVM pattern, CommunityToolkit.Mvvm, and native Windows 11 styling. Pages for dashboard, transactions, budgets, goals, and settings.
+
+### Visual insights and reports
+
+Spending breakdowns by category and time period. Month-over-month trend charts.
+
+### CSV import and export
+
+Import transaction history from bank CSV exports. Export data for portability or external analysis.
+
+### Theme support
+
+Dark and light theme support following Windows system preferences.

@@ -20,32 +20,33 @@ A local-first personal finance and budget tracking app for Windows. Clean, simpl
 - **Envelope budgeting**: Proven methodology that assigns every dollar a job.
 - **Goal-oriented**: Focus on what you're saving for, not just what you're spending.
 
-## Features (Planned)
+## Core Features
 
-- [ ] Transaction tracking with categories
-- [ ] Envelope-based budgeting system
-- [ ] Savings goals with visual progress
-- [ ] Recurring transaction management
-- [ ] Visual spending insights and reports
-- [ ] Multi-account support
-- [ ] CSV import/export
-- [ ] Dark/light theme support
+- **Transaction tracking** with categorized income, expenses, and account-to-account transfers
+- **Multi-account support** for checking, savings, credit card, cash, and investment accounts
+- **Envelope budgeting** with monthly allocation, spending tracking, and carry-forward
+- **Savings goals** with target amounts, deadlines, progress tracking, and monthly contribution estimates
+- **Recurring transactions** with daily, weekly, bi-weekly, monthly, quarterly, and yearly patterns
+- **Category system** with parent/child hierarchy, icons, colors, and system-protected defaults
+- **Currency-aware Money value object** that enforces same-currency arithmetic and 2-decimal rounding
+
+> The desktop UI (WinUI 3) is planned. The domain, application, and infrastructure layers are implemented and tested.
 
 ## Tech Stack
 
 - **.NET 8** - Modern, performant runtime
-- **WinUI 3 / Windows App SDK** - Native Windows 11 experience
+- **Entity Framework Core** - SQLite persistence with repository pattern
+- **WinUI 3 / Windows App SDK** - Native Windows 11 experience (planned UI)
 - **SQLite** - Local, portable database
-- **Clean Architecture** - Maintainable, testable layers
+- **Clean Architecture** - Four-layer separation: Domain, Application, Infrastructure, Desktop
 
 ## Project Structure
 
 ```
 src/
-├── PocketLedger.Domain/        # Core entities and business rules
-├── PocketLedger.Application/   # Use cases and application logic
-├── PocketLedger.Infrastructure/# Data persistence, external services
-└── PocketLedger.Desktop/       # WinUI 3 presentation layer
+├── PocketLedger.Domain/         # Entities, value objects, enums, domain events, specifications
+├── PocketLedger.Application/    # Service interfaces, DTOs, validators, mappers, Result type
+├── PocketLedger.Infrastructure/ # EF Core DbContext, repositories, settings, logging
 tests/
 ├── PocketLedger.Domain.Tests/
 ├── PocketLedger.Application.Tests/
@@ -59,7 +60,6 @@ tests/
 - Windows 10/11
 - Visual Studio 2022 (17.8+) or VS Code with C# Dev Kit
 - .NET 8 SDK
-- Windows App SDK
 
 ### Building
 
